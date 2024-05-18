@@ -1,6 +1,8 @@
 package cmd
 
 import (
+	"desafio-stress-test/pkg/relatorio"
+	testeCarga "desafio-stress-test/pkg/teste-carga"
 	"flag"
 	"fmt"
 )
@@ -27,6 +29,6 @@ func main() {
 		return
 	}
 
-	results := loadtester.RunLoadTest(url, totalReq, concurrency)
-	report.GenerateRepost(results)
+	results := testeCarga.TesteCarga(url, totalReq, concurrency)
+	relatorio.GenerateRepost(results)
 }

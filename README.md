@@ -32,8 +32,8 @@ Após a execução do teste de carga, o programa fornecerá um relatório no ter
 ## Exemplo de Resultado
 
 ```
-Tempo Médio de Requisição: 0.31 segundos
-Quantidade Total de Requisições: 1000
+Esse é o Tempo Médio de Requisição: 0.31 segundos
+Essa é a Quantidade Total de Requisições: 1000
 Distribuição dos Códigos de Status:
-Status Code 200: 1000 vezes
+O numero total de Status Code 200: 1000 vezes
 ```
