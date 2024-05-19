@@ -7,7 +7,7 @@ Este projeto implementa um testador de carga simples em Go. Ele permite que voc√
 
 ```docker build -t nome-da-imagem .```
 
-### Executar o Testador de Carga
+### Executar aplica√ßao de teste de carga simples
 
 - Use o seguinte comando para executar o testador de carga:
 
