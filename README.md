@@ -28,12 +28,3 @@ Após a execução do teste de carga, o programa fornecerá um relatório no ter
 ## Exemplo de Comando
 
 ```docker run nome-da-imagem --url=https://fullcycle.com.br --requests=1000 --concurrency=100```
-
-## Exemplo de Resultado
-
-```
-Esse é o Tempo Médio de Requisição: 0.31 segundos
-Essa é a Quantidade Total de Requisições: 1000
-Distribuição dos Códigos de Status:
-O numero total de Status Code 200: 1000 vezes
-```
