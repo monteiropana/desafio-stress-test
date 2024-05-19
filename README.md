@@ -5,7 +5,7 @@ Este projeto implementa um testador de carga simples em Go. Ele permite que voc�
 ## Como Usar
 - Navegue até o diretório raiz do projeto e construa a imagem usando o comando:
 
-```docker build -t nome-da-imagem```
+```docker build -t nome-da-imagem .```
 
 ### Executar o Testador de Carga
 
@@ -27,7 +27,7 @@ Após a execução do teste de carga, o programa fornecerá um relatório no ter
 
 ## Exemplo de Comando
 
-```docker run nome-da-imagem --url=https://example.com --requests=1000 --concurrency=100```
+```docker run nome-da-imagem --url=https://fullcycle.com.br --requests=1000 --concurrency=100```
 
 ## Exemplo de Resultado
 
