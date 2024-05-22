@@ -1,7 +1,7 @@
 package relatorio
 
 import (
-	testecarga "desafio-stress-test/pkg/teste-carga"
+	testecarga "desafio-stress-test/pkg/testecarga"
 	"fmt"
 )
 

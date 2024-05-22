@@ -1,5 +1,4 @@
-
-FROM golang:latest
+FROM golang:1.17.2-alpine3.13 as build
 
 WORKDIR /app
 
@@ -9,8 +8,12 @@ RUN go mod download
 
 COPY . .
 
-RUN go build -o main ./cmd
+RUN go build -o app ./cmd
 
-EXPOSE 8080
+FROM alpine:3.7
 
-ENTRYPOINT ["./main"]
+COPY --from=build /app/app /usr/local/bin/stress-test
+
+RUN chmod +x /usr/local/bin/stress-test
+
+ENTRYPOINT ["/usr/local/bin/stress-test"]

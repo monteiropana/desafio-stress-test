@@ -1,8 +1,8 @@
-package cmd
+package main
 
 import (
 	"desafio-stress-test/pkg/relatorio"
-	testeCarga "desafio-stress-test/pkg/teste-carga"
+	"desafio-stress-test/pkg/testecarga"
 	"flag"
 	"fmt"
 )
@@ -14,7 +14,6 @@ var (
 )
 
 func init() {
-
 	flag.StringVar(&url, "url", "", "URL do serviço a ser testado")
 	flag.IntVar(&totalReq, "requests", 100, "Número total de requests")
 	flag.IntVar(&concurrency, "concurrency", 10, "Número de chamadas simultâneas")
@@ -29,6 +28,6 @@ func main() {
 		return
 	}
 
-	results := testeCarga.TesteCarga(url, totalReq, concurrency)
+	results := testecarga.TesteCarga(url, totalReq, concurrency)
 	relatorio.GenerateRepost(results)
 }

@@ -27,4 +27,4 @@ Após a execução do teste de carga, o programa fornecerá um relatório no ter
 
 ## Exemplo de Comando
 
-```docker run nome-da-imagem --url=https://fullcycle.com.br --requests=1000 --concurrency=100```
+```docker run stress-test --url=https://fullcycle.com.br --requests=1000 --concurrency=100```
